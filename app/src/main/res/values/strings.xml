@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Story</string>
+
+    <string name="signup">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="message_welcome_page">Mau belajar Android, iOS, Machine Learning, Cloud, Front-End, Back-End, dan bidang IT lainnya? Di Dicoding aja!</string>
+    <string name="title_welcome_page">Selamat datang di Dicoding!</string>
+    <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Masukkan dulu datamu ya</string>
+    <string name="title_login_page">Sudah siap untuk upgrade skill?</string>
+    <string name="name">Nama</string>
+    <string name="message_main_page">Selamat Belajar di Dicoding.</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="logout">Logout</string>
+
+    <string name="invalid_email">Format Email tidak Valid</string>
+    <string name="invalid_password">Password tidak boleh kurang dari 8 karakter</string>
+
+    <string name="image_description">Just An Image</string>
+    <string name="add">Add New Story</string>
+    <string name="user">User Name</string>
+    <string name="description">Description</string>
+
+    <string name="camera">Kamera</string>
+    <string name="gallery">Gallery</string>
+    <string name="upload">Upload</string>
+
+    <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
+    <string name="retry">Retry</string>
+</resources>
