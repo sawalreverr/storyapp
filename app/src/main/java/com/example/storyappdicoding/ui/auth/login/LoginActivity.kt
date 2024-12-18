@@ -61,29 +61,6 @@ class LoginActivity : AppCompatActivity() {
             }
 
             viewModel.login(email, password)
-
-/*            viewModel.login(email, password).observe(this) { result ->
-                if (result != null) {
-                    when(result) {
-                        is Result.Loading -> {
-                            showLoading(true)
-                        }
-                        is Result.Success -> {
-                            showLoading(false)
-                            showToast("Login Success")
-
-                            val intent = Intent(this, MainActivity::class.java)
-                            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-                            startActivity(intent)
-                            finish()
-                        }
-                        is Result.Error -> {
-                            showLoading(false)
-                            showToast(result.error)
-                        }
-                    }
-                }
-            }*/
         }
     }
 

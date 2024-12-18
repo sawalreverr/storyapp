@@ -14,6 +14,7 @@ import retrofit2.http.Multipart
 import retrofit2.http.POST
 import retrofit2.http.Part
 import retrofit2.http.Path
+import retrofit2.http.Query
 
 interface ApiService {
     // Register
@@ -35,7 +36,16 @@ interface ApiService {
 
     // Get All Stories
     @GET("stories")
-    suspend fun stories(): GetAllStoriesResponse
+    suspend fun stories(
+        @Query("page") page: Int = 1,
+        @Query("size") size: Int = 20
+    ): GetAllStoriesResponse
+
+    // Get all stories with location
+    @GET("stories")
+    suspend fun getStoriesWithLocation(
+        @Query("location") location : Int = 1,
+    ): GetAllStoriesResponse
 
     // Get Story Detail
     @GET("stories/{id}")

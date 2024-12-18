@@ -11,6 +11,7 @@ import com.example.storyappdicoding.ui.auth.login.LoginViewModel
 import com.example.storyappdicoding.ui.auth.register.RegisterViewModel
 import com.example.storyappdicoding.ui.detail_story.DetailStoryViewModel
 import com.example.storyappdicoding.ui.main.MainViewModel
+import com.example.storyappdicoding.ui.map.MapViewModel
 
 class ViewModelFactory private constructor(
     private val storyRepository: StoryRepository,
@@ -34,6 +35,9 @@ class ViewModelFactory private constructor(
             }
             modelClass.isAssignableFrom(AddStoryViewModel::class.java) -> {
                 AddStoryViewModel(storyRepository) as T
+            }
+            modelClass.isAssignableFrom(MapViewModel::class.java) -> {
+                MapViewModel(storyRepository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }

@@ -5,9 +5,10 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import com.example.storyappdicoding.BuildConfig
 
 object ApiConfig {
-    private var ENDPOINT = "https://story-api.dicoding.dev/v1/"
+    private var ENDPOINT = BuildConfig.BASE_URL
 
     fun getApiService(userPreference: UserPreference): ApiService {
         val loggingInterceptor =

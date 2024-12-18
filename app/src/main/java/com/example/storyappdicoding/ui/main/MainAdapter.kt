@@ -2,8 +2,8 @@ package com.example.storyappdicoding.ui.main
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.storyappdicoding.core.data.response.stories.ListStoryItem
@@ -11,7 +11,7 @@ import com.example.storyappdicoding.databinding.ItemStoryBinding
 
 class MainAdapter(
     private val onItemClick: (ListStoryItem) -> Unit
-) : ListAdapter<ListStoryItem, MainAdapter.StoryViewHolder>(DIFF_CALLBACK) {
+) : PagingDataAdapter<ListStoryItem, MainAdapter.StoryViewHolder>(DIFF_CALLBACK) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StoryViewHolder {
         val binding = ItemStoryBinding.inflate(

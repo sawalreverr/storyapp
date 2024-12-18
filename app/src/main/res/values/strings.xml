@@ -29,4 +29,8 @@
 
     <string name="empty_image_warning">Silakan masukkan berkas gambar terlebih dahulu.</string>
     <string name="retry">Retry</string>
+    <string name="map">Map</string>
+    <string name="more_menu">More Menu</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="data_not_loaded">Data not loaded</string>
 </resources>
